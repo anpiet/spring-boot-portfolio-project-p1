@@ -1,15 +1,13 @@
 package mate.academy;
 
+import java.math.BigDecimal;
 import mate.academy.model.Book;
 import mate.academy.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-
-import java.math.BigDecimal;
 
 @SpringBootApplication
 public class SpringBootPortfolioProjectApplication {
@@ -37,7 +35,6 @@ public class SpringBootPortfolioProjectApplication {
 
                 bookRepository.save(book1);
                 System.out.println(bookRepository.findAll());
-
 
             }
         };

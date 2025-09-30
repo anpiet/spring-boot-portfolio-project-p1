@@ -6,11 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.Data;
-import org.antlr.v4.runtime.misc.NotNull;
-
-import java.lang.annotation.Native;
 import java.math.BigDecimal;
+import lombok.Data;
 
 @Entity
 @Data

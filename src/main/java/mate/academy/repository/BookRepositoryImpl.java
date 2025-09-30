@@ -1,17 +1,17 @@
 package mate.academy.repository;
 
+import java.util.List;
 import mate.academy.model.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
 public class BookRepositoryImpl implements BookRepository {
 
     private final SessionFactory sessionFactory;
+
     public BookRepositoryImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
@@ -35,7 +35,7 @@ public class BookRepositoryImpl implements BookRepository {
                 sesssion.close();
             }
         }
-        return  book;
+        return book;
     }
 
     @Override
